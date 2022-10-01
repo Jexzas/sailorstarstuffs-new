@@ -56,5 +56,6 @@ html * {
 
 .navbar-brand * { 
     font-family: 'Unna', serif!important;
-    font-size: 2em;
+    font-size: 1.4em;
+    display: inline-flex;
 }
