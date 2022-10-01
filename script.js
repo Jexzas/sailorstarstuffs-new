@@ -183,3 +183,4 @@ function galleryGenerate() {
         gallery.innerHTML += galleryItem(i);
     }
 }
+
