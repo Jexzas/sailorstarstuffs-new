@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SailorStarStuffs</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-end">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="px-1 img-fluid" src="plainlogo.svg"> sailorstarstuffs</a>
+          <button style="border:none;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img style="width: 5em; border: none" src="menu.svg">
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" id="inventoryLink" aria-current="page" href="#inventory">inventory</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="aboutLink" href="#about">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="galleryLink" href="#gallery">gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="faqLink" href="#faq">faq</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contactLink" href="#contact">contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav=link" href="http://instagram.com/sailorstarstuffs"><img id="instagramLogo" style="height: 100px" class="img-fluid" src="instagram.svg"/></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="content justify-content-center container-fluid">
+        <div id="home" class="text-center p-0 mx-auto">
+            <img id="brandLogo" src="logostuff.svg">
+        </div>
+        <div id="inventory" style="display: none">
+            <iframe id="inventoryManager" src="http://sailorstarstuffs.square.site"></iframe>
+        </div>
+        <div id="about" style="display: none">
+            <ul id="aboutList" style="list-style: none;" class="justify-content-around mx-auto m-4">
+
+                <li><p>My name is Snow Silas and I am a Kansas City area artist/craftsperson. My current inventory is available <a href="#inventory">here</a>, past works <a href="#gallery">here</a>, and you can email or message me on instagram regarding any specific piece you might want. <b>If you want a piece I have already sold, just email or DM me and we'll see if I can commission it for you! </b>I have a shop set up through square (on my inventory page, or at <a href="http://sailorstarstuffs.square.site">http://sailorstarstuffs.square.site</a>), but you can also message me on instagram or by email to order something. Thanks for looking!</p></li>
+                <li><h3>For inquiries and payment: </h3></li>
+                <li><img class="contactLogo" src="Gmail_icon.svg"/>&nbsp; &nbsp;snowhollandsilas@gmail.com</li>
+                <li><img class="contactLogo" src="Cash_App-Logo.wine.svg"/>&nbsp; &nbsp; $sailorstarstuffs</li>
+                
+            </ul>
+        </div>
+        <div id="gallery" style="display: none">
+            gallery
+        </div>
+        <div id="faq" style="display: none">
+            <div class="row mx-auto" >
+                <ul style="list-style: none">
+                    <lh><h1>Frequently Asked Questions:</h1></lh>
+                    <li><h3>Pricing:</h3></li>
+                    <li><p>Pricing is variable based on the size and type of product. Typically, I have five basic tiers of earrings, which are teeny ($5), small ($8), medium ($12), large ($16), and "animal critters", which are more expensive to make and cost $20. There are other types of products I will be offering, which will be priced individually.</p></li>
+                    <li><h3>Shipping:</h3></li>
+                    <li><p>Shipping is handled per order, usually through USPS First Class for USA orders. Price of shipping will be discussed before you order through either email or DM.</p></li>
+                    <li><h3>Ordering:</h3></li>
+                    <li><p>To make an order, just shoot me a message on either instagram (@sailorstarstuffs, or click the instagram logo on the menu), or my email (on the about page). Describe what pieces you want, or give the number associated with it. Otherwise, if you're local to KC, my stuffs are available at PH Coffee and Transit Coffee.</p></li>
+                    <li><h5 class="indented">&#8226; Returns:</h5></li>
+                    <li><p class="indented col-sm-5">Returns are extremely difficult with handmade earrings, as they are tough to sterilize once someone has worn them. I cannot offer returns at this time. However, if you are unhappy with your purchase, please let me know. We will work something out.</p></li>
+                    <li><h3>Ethics:</h3></li>
+                    <li><p>i do my best to make sure all bones & animal remains are ethically sourced. i would never source from animals killed for the sole purpose of commodifying their remains- bones are either sourced secondhand, found personally by me on trips to my local woodlands, or purchased from a local vendor who sources ethically (shoutout to <a href="https://instagram.com/oraclekc">Oracle Natural Science</a> in kc, you can check out their website for more info on sourcing).</p></li>
+                </ul>
+            </div>
+        </div>
+        <div id="contact" style="display: none">
+            <section class="mb-4">
+
+                <!--Section heading-->
+                <div class="container w-100 override">
+                <h2 class="h1-responsive font-weight-bold text-center my-4">email me</h2>
+                <!--Section description-->
+                <p class="text-center w-responsive mx-auto mb-5">let me know in your email how I can help!</p>
+                
+                <div class="row">
+                
+                    <!--Grid column-->
+                    <div class="col-md-9 mx-auto">
+                        <form id="contact-form" name="contact-form" method="POST">
+                
+                            <!--Grid row-->
+                            <div class="row">
+                
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="personName" name="name" class="form-control">
+                                        <label for="name" class="">Your name</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+                
+                
+                            </div>
+                            <!--Grid row-->
+                
+                            <!--Grid row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Subject</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+                
+                            <!--Grid row-->
+                            <div class="row">
+                
+                                <!--Grid column-->
+                                <div class="col-md-12">
+                
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                        <label for="message">Your message</label>
+                                    </div>
+                
+                                </div>
+                            </div>
+                            <!--Grid row-->
+                
+                        </form>
+                
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-primary" id="sendbox" onclick="emailForm()">Send</a>
+                        </div>
+                        <div class="status"></div>
+                    </div>
+                    <!--Grid column-->
+                
+                
+                
+                </div>
+                
+                </section>
+        </div>
+      </div>
+    <!-- JavaScript Bundle with Popper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
