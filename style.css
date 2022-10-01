@@ -55,7 +55,6 @@ html * {
 }
 
 .navbar-brand * { 
-    font-family: 'Unna', serif!important;
-    font-size: 1.4em;
+    font-family: 'Unna', 'Merriweather'!important;
     display: inline-flex;
 }
