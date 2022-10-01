@@ -184,3 +184,9 @@ function galleryGenerate() {
     }
 }
 
+$(".nav-link").on('click', () => {
+    if (document.getElementById('navbar-toggle').ariaExpanded == 'true') {
+        console.log('click');
+        document.getElementById('navbar-toggle').click();
+    }
+})
