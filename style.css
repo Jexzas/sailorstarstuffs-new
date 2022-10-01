@@ -47,5 +47,14 @@ html * {
 }
 
 #instagramLogo {
-    width: 5em;
+    width: 1em;
+}
+
+#gallery { 
+    width: 90vw;
+}
+
+.navbar-brand * { 
+    font-family: 'Unna', serif!important;
+    font-size: 2em;
 }

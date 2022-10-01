@@ -1,10 +1,12 @@
 window.addEventListener('load', function() {
     changePage(location.hash);
     setActive(location.hash);
+    galleryGenerate();
 })
 window.addEventListener("hashchange", function() {
     changePage(location.hash);
     setActive(location.hash);
+    
   });
 
 let home = document.getElementById('home');
@@ -13,6 +15,10 @@ let about = document.getElementById('about');
 let gallery = document.getElementById('gallery');
 let faq = document.getElementById('faq');
 let contact = document.getElementById('contact');
+
+gallery.addEventListener('load', function() {
+
+})
 
 let arrayOfPages = [home, inventory, about, gallery, faq, contact];
 
@@ -59,7 +65,8 @@ function changePage(location) {
                 if (page !== gallery) {
                     page.style.display = "none";
                 } else {
-                    page.style.display = "block";
+                    page.style.display = "flex";
+                    page.classList.add("flex-wrap");
                 }
             }
             break;
@@ -162,4 +169,17 @@ function emailForm() {
     let message = document.getElementById("message").value;
     window.location.href = `mailto:snowhollandsilas@gmail.com?subject=${subject}&body=Hi, my name is ${personName} and I'm contacting you about ${subject}. ${message}`;
     becomeContactForm();
+}
+
+
+function galleryGenerate() {
+    gallery.innerHTML = '';
+    const galleryItem = (item) => {
+        return  `<div class="card mx-auto col-12 col-md-4">
+                    <img src="./images/${item}.jpg" class="card-img-top" alt="...">
+                </div>`
+    }
+    for (let i = 0; i < 21; i++) {
+        gallery.innerHTML += galleryItem(i);
+    }
 }
