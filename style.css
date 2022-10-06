@@ -69,9 +69,7 @@ html * {
 }
 
 @media only screen and (max-width: 336px) {
-    #navbar-toggle {
-        margin-left: 2em;
-    }
+
     .navbar-brand {
         margin-right: 0;
     }
