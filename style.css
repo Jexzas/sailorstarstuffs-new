@@ -30,8 +30,9 @@ html * {
 }
 
 #inventoryManager {
-    width: 100vw;
-    height: 100vh;
+    padding: none;
+    width: 98vw;
+    height: 80vh;
 }
 
 #aboutList {
@@ -65,4 +66,13 @@ html * {
 .navbar-brand * { 
     font-family: 'Unna', 'Merriweather'!important;
     display: inline-flex;
+}
+
+@media only screen and (max-width: 336px) {
+    #navbar-toggle {
+        margin-left: 2em;
+    }
+    .navbar-brand {
+        margin-right: 0;
+    }
 }
