@@ -15,9 +15,17 @@ html * {
     margin: 0 auto;
 }
 
-@media only screen and (min-width: 996px) {
+@media only screen and (min-width: 1400px) {
     .navbar-nav {
         margin-left: 25em;
+    }
+}
+@media only screen and (min-width: 900px) and (max-width: 1399px) {
+    .navbar-nav {
+        margin-left: 7em;
+    }
+    #instagramLogo {
+        width: 25rem;
     }
 }
 
@@ -47,7 +55,7 @@ html * {
 }
 
 #instagramLogo {
-    width: 1em;
+    width: 3.5rem;
 }
 
 #gallery { 
