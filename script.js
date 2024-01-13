@@ -175,7 +175,7 @@ function emailForm() {
 function galleryGenerate() {
     gallery.innerHTML = '';
     const galleryItem = (item) => {
-        return  `<div class="card mx-auto col-12 col-md-4">
+        return  `<div class="card col-12 col-lg-3">
                     <img src="./images/${item}.jpg" class="card-img-top" alt="...">
                 </div>`
     }

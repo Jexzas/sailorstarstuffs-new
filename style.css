@@ -3,12 +3,19 @@ html * {
 }
 
 .nav-link {
-    font-size: 3em;
+    @media (min-width: 1400px) {
+        font-size: 3rem;
+    }
+    @media (min-width: 992px) and (max-width: 1399px) {
+        font-size: 2rem;
+    }
+    @media (max-width: 991px) {
+        font-size: 3rem;
+    }
 }
 
 #brandLogo {
     height: 80vh;
-    
 }
 
 #home img {
@@ -20,6 +27,7 @@ html * {
         margin-left: 25em;
     }
 }
+
 @media only screen and (min-width: 900px) and (max-width: 1399px) {
     .navbar-nav {
         margin-left: 7em;
@@ -59,18 +67,27 @@ html * {
     width: 3.5rem;
 }
 
-#gallery { 
-    width: 90vw;
-}
-
 .navbar-brand * { 
     font-family: 'Unna', 'Merriweather'!important;
     display: inline-flex;
 }
 
-@media only screen and (max-width: 336px) {
+.card {
+    border: 0;
+    margin: .25em;
+    transition: all .3s ease-in-out;
+}
 
-    .navbar-brand {
-        margin-right: 0;
+@media (min-width: 992px) {
+    .card:hover, .card:focus {
+        z-index: 100;
+        transform: scale(1.34);
+        box-shadow: 0px 0px .5em black;
     }
+}
+
+#menuButton {
+    width: 5rem;
+    border: none;
+    margin-left: 1em;
 }
